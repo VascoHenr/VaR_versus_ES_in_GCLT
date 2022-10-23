@@ -4,7 +4,7 @@
 # This is a small exercise inspired by the Generalized Central Limit Theorem, and the new "Expected Loss" (ES) metric that might replace the Value at Risk (VaR) metric for some market risk analytics and it follows the nice exercise posted here:
 #"https://towardsdatascience.com/var-calculation-using-monte-carlo-simulations-40b2bb417a67"
 #by Sanket Karve
-# Like Sanket we use pandas, numpy, and the amazing levy_stable SciPy package. See contributors to the latter package here:
+# Like Sanket we use pandas, numpy, but also the amazing levy_stable SciPy package. See contributors to the latter package here:
 #
 #https://github.com/scipy/scipy/tree/v1.9.3/scipy/stats/_levy_stable
 #
