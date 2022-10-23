@@ -52,8 +52,8 @@ varsigma_rtn = ticker_rx.std()    #standard dev of return
 
 # Now lets calculate some VaR and ES_T with T=10 for our single stock portfolio
 Time=10 #No of days(steps or trading days in this case), 10 days base case as is the standard in many places but critically following the base case in d457. Note the observation period for the underlying standard deviation is 5 years.
-histo = np.ndarray(100000)
-for i in range(100000): #100000 runs of simulation
+histo = np.ndarray(10000)
+for i in range(10000): #10000 runs of simulation
     daily_returns = (np.random.normal(ex_daily_rtn,varsigma_rtn,Time))
     h10 = np.cumprod(daily_returns+1) #for small
     histo[i] = h10[-1]
